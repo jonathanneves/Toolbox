@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--Responsivo inicial. Identifica a tela que foi aberta(PC ou celular) e reajusta a tela automaticamente no tamanho adequado, sem deixar espaço sobrando-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/components.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+
+	<link rel="shortcut icon" type="image/ico" href="img/instagramicon.ico" />
+
+	<title>Google</title>
+</head>
+
+<body>
+	<hearder class="layout-cabecalho layout-cabecalho--fixo">
+		<div class="container"> <!--tudo que eu quero mudar pelo css e para ser responsivo-->
+			<nav class="navegacao">
+				<a href="index.html"><img src="img/microsoftlogo.png" width="250px" alt="Microsoft logo"> </a><!--alt é importante para deficiente visual-->
+				<div class="navegacao__menu">
+					<button class="botao-chaveador js-botao-chaveador"></button>
+					<ul class="menu js-menu"> <!-- ao ser clicado chama a funçao do java script-->
+						<li class="menu__item"> <!-- tudo que ta dentro da class menu usa-se 2 underline menu__-->
+							<a href="#">Como funciona</a>
+						</li>
+						<li class="menu__item">
+							<a href="#corridas">Corridas</a>
+						</li>
+						<li class="menu__item">
+							<a href="#">Contato</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="botao botao--login">Login</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</hearder>
+
+	<section class="layout-chamada">
+		<div class="container">
+			<div class="chamada">
+				<h1 class="chamada__titulo">Grand Theft Auto: SanAndreas</h1>
+				<p class="chamada_subtitulo">Empresa de Refrigeração e Climatização</p>
+					<div class="chamada__acao">
+						<a href="#corridas" class="botao botao--principal">Saiba Mais</a>
+					</div>
+			</div>
+		</div>
+	</section>
+
+<div class="layout-depoimento">
+	<div class="container">
+		<div class="depoimento">
+			<blockquote class ="depoimento__texto">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</blockquote>
+			<div class="depoimento__autor">
+				<img src="img/stevejobs.jpg" width="180" alt="Will Smith" class="depoimento__foto">
+				<p> Albert Einstein </p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="corridas" class="layout-corridas">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-sm-4">		<!-- 4 colunas caso o dispositivo seja medio sm = small -->
+				<article class="corrida corrida--destaque">
+					<h2 class="corrida__titulo">Corrida da Fome</h2>
+						<div class="corrida__local">Stalingrado / URSS</div>
+						<ul class="corrida__detalhes">
+							<li>Dia <strong> 27/03/2018</strong></li>
+							<li>8Km Individual </li>
+							<li>8Km Duplas </li>
+							<li>Valor: <strong> R$80,00 </strong> </li>
+							<li><strong>500 Vagas</strong></li> 
+						</ul>
+						<footer class="corrida__rodape">
+							<a href="inscricao.html" class="botao">Inscrever-se</a>
+						</footer>
+				</article>
+			</div>
+
+			<div class="col-sm-4">		<!-- 4 colunas caso o dispositivo seja medio sm = small -->
+				<article class="corrida">
+					<h2 class="corrida__titulo">Corrida no Campo de Concetração</h2>
+					<div class="corrida__local">Monique / Alemanha</div>
+						<ul class="corrida__detalhes">
+							<li>Dia <strong> 05/04/2018</strong></li>
+							<li>10Km Individual </li>
+							<li>10Km Duplas </li>
+							<li>Valor: <strong> R$75,00 </strong> </li>
+							<li><strong>350 Vagas</strong></li> 
+						</ul>
+					<footer class="corrida__rodape">
+						<a href="inscricao.html" class="botao">Inscrever-se</a>
+					</footer>
+				</article>
+			</div>
+
+			<div class="col-sm-4">		<!-- 4 colunas caso o dispositivo seja medio sm = small -->
+				<article class="corrida">
+					<h2 class="corrida__titulo">Corrida no Morro</h2>
+					<div class="corrida__local">Morro da Rocinha /Brasil</div>
+						<ul class="corrida__detalhes">
+							<li>Dia <strong> 22/04/2018</strong></li>
+							<li>6Km Individual </li>
+							<li>6Km Duplas </li>
+							<li>Valor: <strong> R$50,00 </strong> </li>
+							<li><strong>200 Vagas</strong></li> 
+						</ul>
+					<footer class="corrida__rodape">
+						<a href="inscricao.html" class="botao">Inscrever-se</a>
+					</footer>
+				</article>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<footer class="layout-rodape">
+		<div class="container">
+			<p> &copy; Coca-Cola. Todos os direitos reservados</p>
+		</div>
+</footer>
+
+	
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

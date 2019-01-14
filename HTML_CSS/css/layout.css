@@ -1,0 +1,42 @@
+.layout-cabecalho{
+	height: 100px;
+	line-height: 60px;
+	/*border-bottom: 1px solid #ccc;*/
+	background-color: white;
+	background: linear-gradient(white, white, white, #8A2BE2);
+}
+
+.layout-cabecalho--fixo{
+	position: fixed;		/*fixado no topo*/
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;			/*emcima dos componentes*/
+}
+
+.layout-cabecalho img{
+	margin-top: 0px;
+}
+.layout-corridas{
+	padding: 80px 0;
+}
+.layout-chamada{
+	background-color: #8A2BE2;
+	padding: 80px 0;			/*padding 80px(cima em baixo) 0 (esquerda e direita) deixa uma espaçamento entre as imagens*/
+	margin-top: 60px;			/*margin-top deixa uma margem em cima entre um componente e outro*/
+}
+.layout-depoimento{
+	padding: 80px 0;
+	background-color: white;
+
+}
+.layout-rodape{
+	padding: 40px 0;
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-size: 1.3rem;
+}
+.layout-assinatura{
+	padding: 40px 0px;
+}

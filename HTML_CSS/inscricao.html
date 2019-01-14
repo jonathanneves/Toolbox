@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Grand Theft Auto: SanAndreas</title>
+
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+  </head>
+
+<body>
+
+
+    <header class="layout-cabecalho">
+      <div class="container">
+
+        <nav class="navegacao  navegacao--assinatura">
+          <a href="index.html"><img src="img/microsoftlogo.png" width="250px" alt="Apple Logo"></a>
+        </nav>
+        
+      </div>
+    </header>
+
+    <main class="layout-assinatura">
+      <div class="container">
+
+        <form action="#" method="post">
+          <h1 class="titulo-formulario">Sua Inscrição</h1>
+
+          <div class="grupo-entrada">
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" class="campo">
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="grupo-entrada">
+                <label for="cpf">CPF</label>
+                <input id="cpf" type="text" class="campo">
+              </div>
+            </div>
+           
+             <div class="col-sm-3">
+              <div class="grupo-entrada">
+                <label for="data-nascimento">Data de Nascimento</label>
+                <input id="data-nascimento" name="dataNascimento" type="date" class="campo" required>
+              </div>
+            </div>
+          </div>
+              
+          <div class="grupo-entrada">
+            <label for="equipe">Equipe</label>
+            <input id="equipe" name="equipe" type="text" class="campo" required>
+          </div>
+          
+          <div class="grupo-entrada">
+            <label for="email">E-mail</label>
+            <input id="email" type="email" class="campo" required>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="grupo-entrada">
+                <label for="estado">Estado</label>
+                <select id="estado" name="estado" class="campo">
+                  <option>Selecione</option>
+                  <option value="PR">Paraná</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                </select>
+              </div>
+            </div>
+           
+            <div class="col-sm-3">
+              <div class="grupo-entrada">
+                <label for="cidade">Cidade</label>
+                <select id="cidade" class="campo">
+                  <option>Selecione</option>
+                  <option value="1">Curitiba</option>
+                  <option value="2">Tubarão</option>
+                  <option value="3">Porto Alegre</option>
+                </select>
+              </div>
+            </div>
+          </div>
+      
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="grupo-entrada">
+                <label for="senha">Senha</label>
+                <input id="senha" type="password" class="campo" required>
+              </div>
+            </div>
+           
+            <div class="col-sm-3">
+              <div class="grupo-entrada">
+                <label for="confirmacao-senha">Confirme a senha</label>
+                <input id="confirmacao-senha" type="password" class="campo" required>
+              </div>
+            </div>
+          </div>
+          
+          <div style="text-align: center; margin-top: 20px">
+            <input type="submit" value="Inscrever-se" class="botao  botao--principal">
+          </div>
+        </form>
+
+      </div>
+    </main>
+
+    <footer class="layout-rodape">
+      <div class="container">
+        <p>&copy; Coca-Cola. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+</body>
+</html>
