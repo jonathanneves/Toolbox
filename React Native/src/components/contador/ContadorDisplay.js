@@ -15,8 +15,8 @@ export default props => {
 const style = StyleSheet.create({
     Display: {
         backgroundColor: 'red',
-        padding: 20,
-        width: 300,
+        padding: 10,
+        width: 250,
     },
     DisplayText: {
         color: 'blue'

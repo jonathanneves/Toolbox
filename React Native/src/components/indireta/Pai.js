@@ -15,7 +15,7 @@ export default props => {
     return (
         <>
             <Text style={[Estilo.fontP, global.colorMode]}>{texto} {num}</Text>
-            <Filho min={1} max={60}
+            <Filho
                 min={1}
                 max={60}
                 funcao={exibirValor}

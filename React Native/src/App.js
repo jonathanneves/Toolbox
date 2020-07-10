@@ -12,17 +12,46 @@ import Contador from './components/Contador'
 import PaiDireto from './components/direta/Pai'
 import PaiIndireto from './components/indireta/Pai'
 import ContadorV2 from './components/contador/ContadorV2'
+import ParImpar from './components/ParImpar'
+import Familia from './components/relacao/Familia'
+import Membro from './components/relacao/Membro'
+import UsuarioLogado from './components/UsuarioLogado'
+import ListaProduto from './components/produtos/ListaProduto'
+import ListaProdutoV2 from './components/produtos/ListaProdutoV2'
+import DigiteSeuNome from './components/DigiteSeuNome'
+import FlexboxV1 from './components/layout/FlexboxV1'
+import FlexboxV2 from './components/layout/FlexboxV2'
+import FlexboxV3 from './components/layout/FlexboxV3'
+import FlexboxV4 from './components/layout/FlexboxV4'
+import Mega from './components/mega-sena/Mega'
+
 
 export default () => (
     <SafeAreaView style={style.AppBlack}>
         <StatusBar/>
+        <Mega qntdNumeros={1}/>
+        {/* 
+        <FlexboxV4> 
+        <FlexboxV3/>
+        <FlexboxV1/>
+        <FlexboxV2/>
+        */}
+        <DigiteSeuNome/>
+        {/*<ListaProdutoV2/>*/}
+        <ListaProduto/>
+        <UsuarioLogado usuario={ {nome: 'Gui', email: 'gui@gui.com'} }/>
+        <UsuarioLogado usuario={ {nome: 'Ana'} }/>
+        <Familia>
+            <Membro nome="Ana" sobrenome="Silva" />
+            <Membro nome="Julia" sobrenome="Rocha" />
+        </Familia>
         <ContadorV2/>
         <Titulo principal="Cadastro Produto" secundario = "Tela de Cadsatro"/>
         <Botao />
         <Contador inicial={50} passo={5}/>
         <PaiDireto/>
         <PaiIndireto/>
-
+        <ParImpar num={3}/>
         {/*<Text style={[Estilo.fontP, global.colorMode]}>{"Código JS: "+(1+1)}</Text>*/}
         {/* Valor numerico entre {} - String entre "" */}
         {/*<MinMax min={3} max={20}/>
@@ -45,7 +74,7 @@ const style = StyleSheet.create({
         padding: 20
     },
     AppWhite: {
-        backgroundColor: 'black',
+        backgroundColor: 'white',
         flexGrow: 1,
         justifyContent: "center", //Centraliza na vertical da tela
         alignItems: "center",      //Centraliza na horizontal da tela
